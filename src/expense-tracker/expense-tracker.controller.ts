@@ -6,6 +6,7 @@ import {
   StreamableFile,
   Req,
   ValidationPipe,
+  Param,
 } from '@nestjs/common';
 import { createReadStream } from 'fs';
 import path from 'path';
@@ -43,8 +44,24 @@ export class ExpenseTrackerController {
     }
   }
 
+  @Get(['/', ':/id'])
+  async getReceipts(@Param('id') id: string) {
+    try {
+      const filter = id ? { _id: id } : {};
+      return {
+        error: false,
+        data: await this.expTracker.getReceipts(filter),
+      };
+    } catch (e) {
+      return {
+        error: true,
+        data: e?.message,
+      };
+    }
+  }
+
   @Get(['/total-percentage', '/category-percentage'])
-  async getReceipts(@Req() req: any) {
+  async getReports(@Req() req: any) {
     try {
       const param = req?.url?.split('/')?.at(-1);
       let filename: string;

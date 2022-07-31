@@ -116,4 +116,8 @@ export class ExpenseTrackerService {
     await workbook.csv.writeFile(`./temp/${filename}.csv`);
     return filename;
   }
+
+  getReceipts(filter: any): Promise<Receipt[]> {
+    return Receipt.model.find(filter) as unknown as Promise<Receipt[]>;
+  }
 }
