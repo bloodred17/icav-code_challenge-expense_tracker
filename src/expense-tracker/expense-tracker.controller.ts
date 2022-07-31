@@ -8,6 +8,7 @@ import {
   ValidationPipe,
   Param,
 } from '@nestjs/common';
+import { ApiParam, ApiTags } from "@nestjs/swagger";
 import { createReadStream } from 'fs';
 import path from 'path';
 import { ExpenseTrackerService } from './expense-tracker.service';
@@ -18,6 +19,7 @@ import { Receipt } from './receipt.schema';
 export class ExpenseTrackerController {
   constructor(private readonly expTracker: ExpenseTrackerService) {}
 
+  @ApiTags('Receipt')
   @Post()
   async getReceipt(
     @Body(
@@ -44,6 +46,7 @@ export class ExpenseTrackerController {
     }
   }
 
+  @ApiTags('Receipt')
   @Get(['/', ':/id'])
   async getReceipts(@Param('id') id: string) {
     try {
@@ -60,6 +63,7 @@ export class ExpenseTrackerController {
     }
   }
 
+  @ApiTags('Report')
   @Get(['/total-percentage', '/category-percentage'])
   async getReports(@Req() req: any) {
     try {
