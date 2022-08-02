@@ -21,7 +21,7 @@ https://hub.docker.com/r/bloodred17/icav
 
 http://localhost:3100
 
-## Setup
+### Setup
 
 1. `git clone https://github.com/bloodred17/icav-code_challenge-expense_tracker.git`
 
