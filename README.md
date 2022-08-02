@@ -13,26 +13,41 @@ This repo is a submission for the coding challenge received from ICav Technologi
 - Typegoose (for mongodb)
 - exceljs (for csv)
 
+## Docker
+
+https://hub.docker.com/r/bloodred17/icav
+
+## Local
+
+http://localhost:3100
+
+## Setup
+
+1. `git clone https://github.com/bloodred17/icav-code_challenge-expense_tracker.git`
+
+2. `npm install --legacy-peer-deps`
+
+3. `npm run start:dev`
+
+## Live
+
+https://icav.ankurdutta.me <br>
+https://icav-expense-tracker.onrender.com <br>
+
+> The live version can be a little slow in the begenning because it is deployed on free tier and can experience cold start. The link will be live till 1 week from today (3/8/22).
+
+Contact ankur.611@gmail.com if any issues.
+
 ## API Docs
 
-[http://localhost:3100/api-docs](http://localhost:3100/api-docs)
+[local: /api-docs](http://localhost:3100/api-docs)
+[live: /api-docs](https://icav-expense-tracker.onrender.com/api-docs)
 
 ### * Correction in Swagger generated docs
 
  - /expense-tracker (displays all receipts)
  - /expense-tracker/:id (searches receipts based on Mongodb Object id)
 
-## Docker
-
-https://hub.docker.com/r/bloodred17/icav
-
-## Live
-
-https://icav.ankurdutta.me
-
-> The live version can be a little slow in the begenning because it is deployed on free tier and can experience cold start. The link will be live till 1 week from today (3/8/22).
-
-Contact ankur.611@gmail.com if any issues.
 
 ## Author
 
