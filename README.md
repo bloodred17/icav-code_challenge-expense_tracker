@@ -40,8 +40,8 @@ Contact ankur.611@gmail.com if any issues.
 
 ## API Docs
 
-[local: /api-docs](http://localhost:3100/api-docs)
-[live: /api-docs](https://icav-expense-tracker.onrender.com/api-docs)
+[local: /api-docs](http://localhost:3100/api-docs) <br>
+[live: /api-docs](https://icav-expense-tracker.onrender.com/api-docs) <br>
 
 ### * Correction in Swagger generated docs
 
