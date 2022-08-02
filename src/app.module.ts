@@ -11,7 +11,8 @@ import { ExpenseTrackerModule } from './expense-tracker/expense-tracker.module';
 })
 export class AppModule {
   constructor() {
-    mongoose.connect('mongodb+srv://ankur:PKkADqGzUkUsOWjF@cluster0.7o0eybg.mongodb.net/test');
-    // mongoose.connect('mongodb://localhost:27017/expense-tracker');
+    mongoose.connect(
+      process.env.MONGODB || 'mongodb://localhost:27017/expense-tracker',
+    );
   }
 }
