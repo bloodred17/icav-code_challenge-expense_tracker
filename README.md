@@ -30,6 +30,10 @@ https://hub.docker.com/r/bloodred17/icav
 
 https://icav.ankurdutta.me
 
+> The live version can be a little slow in the begenning because it is deployed on free tier and can experience cold start. The link will be live till 1 week from today (3/8/22).
+
+Contact ankur.611@gmail.com if any issues.
+
 ## Author
 
 [Ankur Dutta](https://github.com/bloodred17)
