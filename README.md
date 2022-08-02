@@ -4,14 +4,14 @@ This repo is a submission for the coding challenge received from ICav Technologi
 
 ## Requirements
 
-- Nodejs
-- MongoDB
+- [Nodejs](https://nodejs.org/en/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Core
 
-- Nestjs (for api)
-- Typegoose (for mongodb)
-- exceljs (for csv)
+- [Nestjs](https://nestjs.com/) (for api)
+- [Typegoose](https://typegoose.github.io/typegoose/) (for mongodb)
+- [exceljs](https://github.com/exceljs/exceljs) (for csv)
 
 ## Docker
 
@@ -34,7 +34,7 @@ http://localhost:3100
 https://icav.ankurdutta.me <br>
 https://icav-expense-tracker.onrender.com <br>
 
-> The live version can be a little slow in the begenning because it is deployed on free tier and can experience cold start. The link will be live till 1 week from today (3/8/22).
+> The live version can be a little slow in the beginning because it is deployed on the free tier and can experience a cold start. The link will be live for 1 week from today (3/8/22).
 
 Contact ankur.611@gmail.com if any issues.
 
